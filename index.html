@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Plus+</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <h1>&#128197; Agenda Plus+</h1>
+      <p>Cadastre as pessoas que vão usar a agenda</p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Adicionar pessoa</p>
+      <div class="input-row">
+        <input type="text" id="inputNome" placeholder="Nome da pessoa..." maxlength="60" />
+        <button class="btn-add" onclick="adicionarPessoa()">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Pessoas cadastradas <span class="badge" id="countBadge">0</span></p>
+      <ul class="people-list" id="listaPessoas">
+        <li class="empty-msg">Nenhuma pessoa cadastrada ainda.</li>
+      </ul>
+    </div>
+
+    <a href="calendario.html" class="btn-calendar">
+      <span class="cal-icon">&#128197;</span>
+      Abrir Calendário
+    </a>
+
+  </div>
+
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
